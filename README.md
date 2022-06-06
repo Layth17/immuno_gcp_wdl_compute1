@@ -58,9 +58,9 @@ The following repositories contain: this tutorial (immuno_gcp_wdl), the WDL work
 ```bash
 mkdir git
 cd git
-git clone git@github.com:griffithlab/immuno_gcp_wdl_compute1.git
-git clone git@github.com:griffithlab/analysis-wdls.git
-git clone git@github.com:griffithlab/cloud-workflows.git
+git clone git@github.com:Layth17/immuno_gcp_wdl_compute1.git
+git clone git@github.com:Layth17/analysis-wdls.git
+git clone git@github.com:Layth17/cloud-workflows.git
 ```
 
 ### Login to GCP and set the desired project
