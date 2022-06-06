@@ -34,10 +34,10 @@ The following environment variables are used merely for convenience and should b
 export GROUP=compute-oncology
 export GCS_PROJECT=griffith-lab
 export GCS_SERVICE_ACCOUNT=cromwell-server@$GCS_PROJECT.iam.gserviceaccount.com
-export GCS_BUCKET_NAME=griffith-lab-test-immuno-pipeline
-export GCS_BUCKET_PATH=gs://griffith-lab-test-immuno-pipeline
-export GCS_INSTANCE_NAME=mg-immuno-test
-export WORKING_BASE=/storage1/fs1/mgriffit/Active/griffithlab/pipeline_test/gcp_wdl_test
+export GCS_BUCKET_NAME=griffith-lab-test-layth
+export GCS_BUCKET_PATH=gs://griffith-lab-test-layth
+export GCS_INSTANCE_NAME=layth-immuno-test
+export WORKING_BASE=/storage1/fs1/mgriffit/Active/griffithlab/pipeline_test/layth
 export RAW_DATA_DIR=/storage1/fs1/mgriffit/Active/griffithlab/pipeline_test/raw_data
 export WORKFLOW_DEFINITION=$WORKING_BASE/git/analysis-wdls/definitions/immuno.wdl
 export LOCAL_YAML=hcc1395_immuno_local-WDL.yaml
