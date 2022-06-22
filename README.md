@@ -76,7 +76,7 @@ Run the following command and make note of the "Service Account" returned (e.g. 
 
 ```bash
 cd $WORKING_BASE/git/cloud-workflows/manual-workflows/
-bash resources.sh init-project --project $GCS_PROJECT --bucket $GCS_BUCKET_NAME
+bash resources.sh init-project --project $GCS_PROJECT --bucket $GCS_BUCKET_NAME --ip-range $IP_RANGE
 ```
 
 This step should have created two new configuration files in your current directory: `cromwell.conf` and `workflow_options.json`.
@@ -170,7 +170,7 @@ Now log into Google Cromwell VM instance again and copy the YAML file to its loc
 ```bash
 gcloud compute ssh $GCS_INSTANCE_NAME
 
-export GCS_BUCKET_PATH=gs://griffith-lab-test-immuno-pipeline
+export GCS_BUCKET_PATH=gs://griffith-lab-test-layth
 export CLOUD_YAML=hcc1395_immuno_cloud-WDL.yaml
 
 gsutil cp $GCS_BUCKET_PATH/yamls/$CLOUD_YAML .
@@ -217,7 +217,7 @@ After a workflow is run, before exiting and deleting your VM, make sure that the
 First determine you WORKFLOW_ID. This can be done several ways. If the run was successful it should be reported at the bottom of the cromwell log as "$WORKFLOW_ID  completed with status Succeeded". Or you find it by the name of the directory where your run was stored in the Google bucket. Both of these approaches are illustrated here:
 
 ```bash
-export GCS_BUCKET_PATH=gs://griffith-lab-test-immuno-pipeline
+export GCS_BUCKET_PATH=gs://griffith-lab-test-layth
 gsutil ls $GCS_BUCKET_PATH/cromwell-executions/immuno/
 
 journalctl -u cromwell | tail | grep "Workflow actor"
